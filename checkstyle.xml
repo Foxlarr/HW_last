@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+        "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+        "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+<!-- Настройки для проверок стиля кода -->
+<module name="FileTabCharacter">
+    <!-- Проверка использования пробелов вместо табуляции -->
+    <property name="eachLine" value="true"/>
+</module>
+<module name="NewlineAtEndOfFile">
+    <!-- Проверка наличия пустой строки в конце файла -->
+</module>
+
+<module name="RegexpSingleline">
+    <!-- Проверка наличия пробелов или пустых строк в конце строки -->
+    <property name="format" value="\s+$"/>
+    <property name="message" value="Line has trailing spaces."/>
+</module>
+<module name="LineLength">
+    <!-- Максимальная длина строки кода -->
+    <property name="max" value="120"/>
+</module>
+</module>
